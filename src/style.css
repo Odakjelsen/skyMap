@@ -1,0 +1,17 @@
+body {
+  background-color: #cee7f2;
+  font-family: "Caveat", cursive;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+.weather-app {
+  background: white;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 15px;
+}
