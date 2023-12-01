@@ -19,27 +19,40 @@
     <title>SkyMap</title>
   </head>
   <body>
+  
     <div class="weather-app">
       <header>
-        <form action="">
+        <div class="logo-name">
+          <img src="image/location.png" alt="logo" class="img-logo" />
+        <form class="search-form">
+          <h2>SkyMap</h2>
+        </div>
+        
           <input
             type="search"
             placeholder="Enter your destination..."
             required
+            class="search-input"
           />
-          <input type="submit" value="Search" />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Oslo</h1>
-          <p>
-            day and time <br />
-            Precipitation: 12% Humidity: 69% Wind: 6 m/s <br />
-            Feels like -7°
-          </p>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>, Feels like: <strong>-6°C</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">🌨</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >-1</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
         </div>
-        <div>🌨-1°C</div>
       </main>
       <footer>
         <p>
