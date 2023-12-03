@@ -146,20 +146,22 @@ footer {
   .current-details {
     font-size: 13px;
     line-height: 16px;
+    color: black;
   }
 
   .current-temperature-icon {
-    width: 100px;
-    height: 100px;
-    top: 25px;
+    width: 120px;
+    height: 120px;
+    top: 35px;
   }
 
   .current-temperature-value {
-    font-size: 60px;
+    font-size: 70px;
+    font-weight: 700;
   }
 
   .current-temperature-unit {
     font-size: 14px;
-    top: -15px;
+    top: -33px;
   }
 }
