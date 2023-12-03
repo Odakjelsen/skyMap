@@ -45,12 +45,11 @@ h2 {
   z-index: 1;
 }
 .search-input {
-  background-color: #ece6e3;
+  background-color: #e5dcd7;
   border: none;
   border-radius: 5px;
   width: 100%;
   padding: 14px;
-  color: rgb(26, 26, 26);
 }
 .search-button {
   background: #f46cc9cb;
@@ -90,13 +89,13 @@ main {
   line-height: 50px;
 }
 .current-details {
-  color: rgba(26, 26, 26, 0.658);
+  color: rgba(9, 9, 9, 0.754);
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
 }
 strong {
-  color: #f46cc8;
+  color: #f350bf;
 }
 .current-temperature-icon {
   position: relative;
