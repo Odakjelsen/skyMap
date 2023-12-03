@@ -95,13 +95,13 @@ strong {
 
 .current-temperature-value {
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .current-temperature-unit {
-  font-size: 28px;
+  font-size: 20px;
   position: relative;
-  top: -37px;
+  top: -35px;
   margin-right: 7px;
 }
 a {
