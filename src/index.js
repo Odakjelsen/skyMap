@@ -8,9 +8,9 @@ function displayTemperature(response) {
   let feelsLikeElement = document.querySelector("#feels-like");
   let currentDateElement = document.querySelector("#current-date");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
-
   currentDateElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity} %`;
@@ -19,6 +19,10 @@ function displayTemperature(response) {
     response.data.temperature.feels_like
   )}°C`;
   temperatureElement.innerHTML = Math.round(temperature);
+  iconElement.innerHTML = `<img
+                src="${response.data.condition.icon_url}"
+                class="current-temperature-icon"
+              />`;
 }
 
 function formatDate(date) {
