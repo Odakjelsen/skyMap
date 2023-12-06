@@ -63,7 +63,34 @@ function search(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+            ${day}
+          </br>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
+              alt=""
+              class="weather-forecast-date-icone"
+            />
+             <div>
+              <span class="weather-forecast-temperature-max">-5°</span><span class="weather-forecast-temperature-min"> -4°</span>
+             
+             </div>
+          </div>`;
+  });
+
+  forecast.innerHTML = forecastHtml;
+}
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
 searchCity("Oslo");
+displayForecast();
